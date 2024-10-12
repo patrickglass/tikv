@@ -875,7 +875,7 @@ dependencies = [
  "num-integer",
  "num-traits",
  "serde",
- "time 0.1.43",
+ "time 0.1.45",
  "wasm-bindgen",
  "winapi 0.3.9",
 ]
@@ -1526,7 +1526,7 @@ dependencies = [
  "tempfile",
  "tikv_alloc",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "toml",
  "tracker",
  "txn_types",
@@ -4245,7 +4245,7 @@ dependencies = [
  "tidb_query_datatype",
  "tikv_alloc",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "tokio",
  "tracker",
  "txn_types",
@@ -4294,7 +4294,7 @@ dependencies = [
  "test_util",
  "thiserror",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "tracker",
  "txn_types",
  "walkdir",
@@ -5994,7 +5994,7 @@ dependencies = [
  "slog-global",
  "tempfile",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
 ]
 
 [[package]]
@@ -6069,7 +6069,7 @@ dependencies = [
  "tikv",
  "tikv_kv",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "tipb",
  "tipb_helper",
  "tokio",
@@ -6167,7 +6167,7 @@ dependencies = [
  "serde_json",
  "thiserror",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "yatp",
 ]
 
@@ -6273,7 +6273,7 @@ dependencies = [
  "tidb_query_common",
  "tidb_query_datatype",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "tipb",
  "tipb_helper",
  "twoway",
@@ -6389,7 +6389,7 @@ dependencies = [
  "tikv_alloc",
  "tikv_kv",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "tipb",
  "tokio",
  "tokio-openssl",
@@ -6442,7 +6442,7 @@ dependencies = [
  "structopt",
  "tikv",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "tokio",
  "toml",
  "txn_types",
@@ -6491,7 +6491,7 @@ dependencies = [
  "server",
  "tikv",
  "tikv_util",
- "time 0.1.43",
+ "time 0.3.20",
  "toml",
  "tracing-active-tree",
  "tracing-subscriber",
@@ -6602,7 +6602,7 @@ dependencies = [
  "tempfile",
  "thiserror",
  "tikv_alloc",
- "time 0.1.43",
+ "time 0.3.20",
  "tokio",
  "tokio-executor",
  "tokio-timer",
@@ -6614,11 +6614,12 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.1.43"
+version = "0.1.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ca8a50ef2360fbd1eeb0ecd46795a87a19024eb4b53c5dc916ca1fd95fe62438"
+checksum = "1b797afad3f312d1c66a56d11d0316f916356d11bd158fbc6ca6389ff6bf805a"
 dependencies = [
  "libc 0.2.151",
+ "wasi 0.10.0+wasi-snapshot-preview1",
  "winapi 0.3.9",
 ]
 
@@ -7086,6 +7087,12 @@ name = "wasi"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b89c3ce4ce14bdc6fb6beaf9ec7928ca331de5df7e5ea278375642a2f478570d"
+
+[[package]]
+name = "wasi"
+version = "0.10.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1a143597ca7c7793eff794def352d41792a93c481eb1042423ff7ff72ba2c31f"
 
 [[package]]
 name = "wasi"
